@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--======================== Inclusion of Scss Files ======================-->
+    <template id="megamenu_assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/website_megamenu/static/src/js/menu.js"/>
+        </xpath>
+    </template>
+
+    <template id="theme_assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="script[last()]" position="after">
+            <link rel="stylesheet" type="text/scss"
+				href="/website_megamenu/static/src/scss/megamenu.scss" />
+        </xpath>
+    </template>
+
+</odoo>

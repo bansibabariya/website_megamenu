@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="website_menu_edit" name="Edit Menu">
+		<t t-call="website.layout">
+			<div id="wrap" t-ignore="True">
+				<hr />
+				<div class="container">
+					<div t-if="record">
+						<div t-field="record.html_menu" />
+					</div>
+				</div>
+			</div>
+		</t>
+	</template>
+
+</odoo>

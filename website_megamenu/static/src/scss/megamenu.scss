@@ -1,0 +1,32 @@
+ .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.te_menu_style_1{
+    img{
+        border-radius: 50%;
+        height: 175px;
+        border: 2px solid black;
+        padding: 2px;
+    }
+}
+.te_menu_style_5{
+    .icons:before{
+       content: "\f101";
+       font-family: FontAwesome;
+    }
+}
+
+@media (max-width: 767px) {
+    .te_menu_style_5{
+        .row{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+    .te_menu_style_1 img{
+        height: 130px !important;
+    }
+    .te_menu_style_4 h5{
+        padding-top: 0 !important;
+    }
+}
